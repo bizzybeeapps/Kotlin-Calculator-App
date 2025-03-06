@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base Theme -->
+    <style name="Theme.CalculatorApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorSurface">@android:color/white</item>
+        <item name="colorOnSurface">@android:color/black</item>
+    </style>
+
+    <!-- Calculator Button Style -->
+    <style name="CalcButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Calculator Button for Equals (`=`) -->
+    <style name="CalcButtonColored" parent="CalcButton">
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
