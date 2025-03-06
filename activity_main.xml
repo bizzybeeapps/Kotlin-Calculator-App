@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        android:title="@string/app_name"
+        android:titleTextColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@color/purple_500"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <!-- Display Area -->
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="0"
+            android:textSize="50sp"
+            android:gravity="end"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"/>
+
+        <!-- Grid Layout for Buttons -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:paddingTop="5dp"
+            android:background="@android:color/background_light">
+
+            <!-- First Row -->
+            <Button android:text="@string/btn_mc" android:id="@+id/btnMC" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_mr" android:id="@+id/btnMR" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_m_plus" android:id="@+id/btnMPlus" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_m_minus" android:id="@+id/btnMMinus" style="@style/CalcButton"/>
+
+            <!-- Second Row -->
+            <Button android:text="@string/btn_percent" android:id="@+id/btnPercent" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_ce" android:id="@+id/btnCE" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_clear" android:id="@+id/btnClear" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_backspace" android:id="@+id/btnBackspace" style="@style/CalcButton"/>
+
+            <!-- Third Row -->
+            <Button android:text="@string/btn_inverse" android:id="@+id/btnInverse" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_square" android:id="@+id/btnSquare" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_sqrt" android:id="@+id/btnSqrt" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_divide" android:id="@+id/btnDivide" style="@style/CalcButton"/>
+
+            <!-- Number Pad -->
+            <Button android:text="@string/btn_7" android:id="@+id/btn7" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_8" android:id="@+id/btn8" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_9" android:id="@+id/btn9" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_multiply" android:id="@+id/btnMultiply" style="@style/CalcButton"/>
+
+            <Button android:text="@string/btn_4" android:id="@+id/btn4" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_5" android:id="@+id/btn5" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_6" android:id="@+id/btn6" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_subtract" android:id="@+id/btnSubtract" style="@style/CalcButton"/>
+
+            <Button android:text="@string/btn_1" android:id="@+id/btn1" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_2" android:id="@+id/btn2" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_3" android:id="@+id/btn3" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_add" android:id="@+id/btnAdd" style="@style/CalcButton"/>
+
+            <!-- Bottom Row -->
+            <Button android:text="@string/btn_sign" android:id="@+id/btnSign" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_0" android:id="@+id/btn0" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_dot" android:id="@+id/btnDot" style="@style/CalcButton"/>
+            <Button android:text="@string/btn_equal" android:id="@+id/btnEqual" style="@style/CalcButtonColored"/>
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
